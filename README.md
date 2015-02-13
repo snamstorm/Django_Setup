@@ -41,7 +41,8 @@ class TABLE_NAME(models.Model):
     def __unicode__(self):
         return u"{}".format(self.variable1)
 ````
-
+### Setting up Django Admin
+* When using the built-in Django admin panel, this step always goes together with creating a data model
 * In PyCharm, open <code>admin.py</code> and paste 
 ````Python
 from django.contrib import admin
@@ -52,11 +53,11 @@ class TABLE_NAMEAdmin(admin.ModelAdmin):
 
 admin.site.register(TABLE_NAME, TABLE_NAMEAdmin)
 ````
-
+### Create Tables in Database
 * In virtualenv, <code>python manage.py makemigrations</code>
 * In virtualenv, <code>python manage.py migrate</code>
 
-# Setting up Django Admin
+###Create SuperUser
 * In virtualenv, <code>python manage.py createsuperuser</code>
 * In <code>Username: </code>, enter an admin_name
 * In <code>Email address: </code>, enter admin_email
