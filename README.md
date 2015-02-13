@@ -1,4 +1,4 @@
-# Setting up Django Project in PyCharm
+# Setting up a Django Project in PyCharm
 
 * In the terminal, <code>mkvirtualenv PROJECT_NAME</code>
 * In the virtualenv, <code>pip install django</code>
